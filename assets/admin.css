@@ -1,0 +1,537 @@
+/* ── Layout ───────────────────────────────────────────────────────────────── */
+
+.wpme-wrap {
+    max-width: 100%;
+}
+
+/* Config screen two-column layout */
+.wpme-config-layout {
+    display: flex;
+    gap: 32px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.wpme-pt-list {
+    min-width: 200px;
+    max-width: 240px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.wpme-pt-list h3 {
+    margin-top: 0;
+}
+
+.wpme-pt-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wpme-pt-list li {
+    margin-bottom: 4px;
+}
+
+.wpme-pt-list a {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #1d2327;
+    font-size: 13px;
+}
+
+.wpme-pt-list a:hover {
+    background: #f0f0f1;
+}
+
+.wpme-active-pt {
+    background: #2271b1 !important;
+    color: #fff !important;
+}
+
+.wpme-pt-slug {
+    display: block;
+    font-size: 11px;
+    opacity: 0.65;
+}
+
+.wpme-active-pt .wpme-pt-slug {
+    opacity: 0.8;
+}
+
+.wpme-key-config {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px 20px;
+}
+
+.wpme-key-config h3 {
+    margin-top: 0;
+}
+
+/* Meta key checkboxes */
+.wpme-key-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin: 12px 0 16px;
+}
+
+.wpme-key-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.wpme-key-item input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Saved configs list */
+.wpme-saved-configs {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+
+.wpme-saved-configs h3 {
+    margin-top: 0;
+}
+
+.wpme-saved-configs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wpme-saved-configs li {
+    padding: 4px 0;
+    font-size: 13px;
+}
+
+/* ── Image cell ───────────────────────────────────────────────────────────── */
+
+.wpme-image-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 140px;
+}
+
+.wpme-img-thumb {
+    width: 80px;
+    height: 80px;
+    background: #f0f0f1;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wpme-img-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.wpme-img-placeholder {
+    font-size: 11px;
+    color: #999;
+    text-align: center;
+    padding: 4px;
+}
+
+.wpme-img-actions {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+/* ── Config table ─────────────────────────────────────────────────────────── */
+
+.wpme-config-table {
+    margin-bottom: 16px;
+}
+
+.wpme-config-table td,
+.wpme-config-table th {
+    padding: 7px 10px;
+    vertical-align: middle;
+}
+
+.wpme-config-row {
+    opacity: 0.55;
+    transition: opacity 0.15s;
+}
+
+.wpme-config-row.wpme-config-checked {
+    opacity: 1;
+}
+
+.wpme-type-select {
+    width: 100%;
+}
+
+.wpme-type-select:disabled {
+    opacity: 0.4;
+}
+
+.wpme-table-info {
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.wpme-table-scroll {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.wpme-table {
+    font-size: 13px;
+    min-width: 600px;
+}
+
+.wpme-table th {
+    background: #fff;
+    white-space: nowrap;
+    padding: 8px 10px;
+    text-align: left;
+	border: 2px solid #c3c4c7;
+}
+
+.wpme-table td {
+    padding: 6px 8px;
+    vertical-align: top;
+    border: 1px solid #e5e5e5;
+}
+
+.wpme-table tbody tr:hover  {
+    outline: 2px solid #fafafa;
+}
+
+.wpme-col-id {
+    width: 48px;
+    white-space: nowrap;
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+}
+
+.wpme-col-id a {
+    color: #777;
+    text-decoration: underline;
+}
+
+.wpme-col-id a:hover {
+    color: #2271b1;
+    text-decoration: none;
+}
+
+.wpme-col-title {
+    min-width: 180px;
+    max-width: 280px;
+}
+
+.wpme-col-status {
+    white-space: nowrap;
+    width: 110px;
+}
+
+.wpme-status-select {
+    width: 100%;
+    font-size: 12px;
+    padding: 4px 6px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* Textareas */
+.wpme-field {
+    width: 100%;
+    min-width: 160px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: inherit;
+    padding: 5px 7px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    resize: vertical;
+    line-height: 1.5;
+    transition: border-color 0.15s;
+}
+
+.wpme-field:focus {
+    border-color: #2271b1;
+    outline: none;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* Save column */
+.wpme-col-save {
+    white-space: nowrap;
+    width: 100px;
+    text-align: center;
+}
+
+.wpme-save-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+
+.wpme-col-save button{
+	filter: saturate(80%);
+}
+
+.wpme-col-save button:hover {
+	filter: saturate(100%);
+}
+
+.wpme-delete-btn {
+  font-size: .8em !important;
+  padding: 5px !important;
+  height: auto !important;
+  line-height: 1 !important;
+  background-color: #b17171 !important;
+  color: #fff !important;
+  border-color: #b17171 !important;
+}
+
+.wpme-save-status {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    min-height: 16px;
+    text-align: center;
+}
+
+.wpme-saved {
+    color: #1a6e1a;
+}
+
+.wpme-error {
+    color: #cc1818;
+}
+
+
+
+
+.mpme-wrapper {
+		overflow: auto;
+		max-height: 80vh;
+		overscroll-behavior-x: contain;
+		padding-left: 15px;
+}
+
+
+.wpme-table thead th {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+}
+
+.wpme-table td:first-of-type {
+		position: sticky;
+		left: 0;
+		background-color: #eee;
+		width: 50px;
+}
+
+.wpme-table th:first-of-type {
+		position: sticky;
+		left: 0;
+		width: 50px;
+		z-index: 3;
+}
+
+
+.wpme-table td:nth-of-type(2) {
+		position: sticky;
+		left: 46px;
+		width: 100px;
+		box-shadow: 2px 3px 2px;
+		background-color: #eee;
+}
+
+.wpme-table th:nth-of-type(2) {
+		position: sticky;
+		left: 46px;
+		width: 100px;
+		z-index: 3 !important;
+		box-shadow: 2px 0px 2px;
+}
+
+
+
+.wpme-table td:last-of-type, .wpme-table th:last-of-type {
+		position: sticky;
+		right: 0;
+		box-shadow: -2px 0px 2px;
+}
+
+
+
+.wpme-table tr:nth-of-type(2n+1) td {
+  background-color: #f5f5f5;
+}
+
+.wpme-table tr:nth-of-type(2n) td {
+  background-color: #fff;
+}
+
+.wpme-status-select {
+  font-size: .75rem !important;
+  width: 90px;
+}
+
+
+.wpme-drag-handle {
+    cursor: grab;
+    color: #aaa;
+    font-size: 18px;
+    padding: 0 8px;
+    user-select: none;
+    width: 20px;
+}
+.wpme-drag-handle:active { cursor: grabbing; }
+.wpme-config-row.ui-sortable-helper {
+    background: #f0f7ff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    display: table;
+}
+.wpme-config-row.ui-sortable-placeholder {
+    visibility: visible !important;
+    background: #e8f0fe;
+}
+
+
+.wpme-save-btn {
+  width: 75px;
+  color: #fff !important;
+  background-color: #22b171 !important;
+}
+
+
+.wpme-projecttag-label input {
+  margin: 2px 0 0px;
+}
+.wpme-projecttag-label {
+  display: flex;
+  align-items: start;
+  margin-bottom: 8px;
+  gap: 5px;
+  line-height: 1;
+}
+
+
+select.wpme-field {
+  width: auto;
+  min-width: 0;
+  font-size: .9em;
+}
+
+
+
+
+.wpme-multirichtext-item-header:has(.wpme-multirichtext-delete:hover) {
+		background-color: #fee;
+}
+
+.wpme-multirichtext-item {
+		margin-bottom: .5rem;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: .5rem;
+		font-size: .9em;
+		position: relative;
+}
+
+.wpme-multirichtext-item input {
+		font-size: 1em;
+}
+
+.wpme-multirichtext-item {
+		
+}
+
+.wpme-multirichtext-delete {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		border: none !important;
+		background-color: red !important;
+		opacity: .5;
+		color: #fff !important;
+		border-radius: 50% !important;
+		display: block;
+}
+
+.wpme-multirichtext-name {
+		width: 200px;
+}
+
+.wpme-multirichtext-cell {
+		min-width: 250px;
+}
+
+
+.wpme-multirichtext-items {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: clip;
+  background-color: #eee;
+  padding: 5px;
+  margin: 0 -5px 10px;
+}
+
+
+.wpme-richtext-preview {
+  min-width: 140px;
+  display: block;
+}
+
+.wpme-table th:hover {
+    background: #e5e5e5;
+    user-select: none;
+}
+
+.wpme-row:hover td {
+  background-color: #ded !important;
+}
+
+
+
+
+.wpme-table {
+  counter-reset: rowNumber;
+}
+
+.wpme-table tbody tr {
+  counter-increment: rowNumber;
+  position: relative;
+}
+
+.wpme-table tbody tr td:first-of-type::before {
+content: counter(rowNumber);
+  position: absolute;
+  left: -12px;
+  top: .5em;
+  font-weight: bold;
+  color: #000;
+}
